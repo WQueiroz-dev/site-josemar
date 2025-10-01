@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+html {
+  color-scheme: light dark;
+}
+body {
+  background-color: black;
+  transition: .6s;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 5rem;
+    flex-wrap: wrap;
+}
+
+
+.logo {
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    transition: all 0.5s ease;
+    
+}
+
+.menu {
+    display: flex;
+    gap: 3rem; 
+    list-style: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Montserrat' ,sans-serif;
+    transition: all 0.3s ease;
+    
+}
+
+
+/*Interruptor dark and light*/
+
+.trilho {
+  display: flex;
+  width: 62px;
+  height: 22px;
+  cursor: pointer;
+  background-color: #121111;
+  border-radius: 10px;
+  position: relative;
+}
+
+.trilho .interruptor {
+  width: 22.5px;
+  height: 22px;
+  background-color:#4b4949;
+  border-radius: 50%;
+  transform: scale(.9);
+  position: absolute;
+  left: 0;
+  transition: .6s;
+}
+
+.trilho.dark{
+  background-color: #6d6a6a;
+  transition: .6s;
+}
+
+.trilho.dark .interruptor{
+  left: 39px;
+  background-color: #f1f1f1;
+}
+
+body.dark{
+  background: linear-gradient(to left, #f1f1f1, #4d4b4b)
+}
+
+body.dark .menu li a {
+  color: black;
+}
+
+.card.dark {
+  background: black;
+  transition: .6s;
+}
+.card.dark .tabs {
+  background-color: white;
+  transition: .6s;
+}
+
+.card.dark .tab {
+  color: black;
+}
+
+.card.dark .subtitle {
+  color: rgb(125, 122, 122);
+}
+
+.card.dark .description {
+  color: white;
+}
+
+
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .menu li a {
+        font-size: 0.8rem;
+        text-align: left;
+        
+    }
+    .menu {
+        gap: 2rem;
+        
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1080px) {
+    .menu li a {
+        font-size: 1.5rem;
+    }
+    .menu {
+        gap: 3rem;;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 1018px) {
+    .navbar {
+        padding:0.5rem 2rem;
+    }
+
+    .logo {
+      width: 3rem;
+      height: 3rem;
+    }
+   
+}
+
+/*bloco*/
+
+.card {
+  background: linear-gradient(to bottom, #f1f1f1, #4d4b4b);
+  border-radius: 25px;
+  width: 40rem;
+  padding: 3rem;
+  margin-left: 3rem;
+  margin-top: 5rem;
+  transition: .6s;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  border-radius: 25px;
+  padding: 7px 0;
+  margin-bottom: 20px;
+  width: 80%;
+  margin-left: 6rem;
+  margin-top: -10px;
+}
+
+.tab {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: Montserrat, sans-serif;;
+}
+
+.name {
+  background-color: #7a3cff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 15px;
+  width: fit-content;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.description {
+  color: #333;
+  font-size: 14px;
+  line-height: 1.6;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 800px) {
+  .card {
+    width: 90%;               /* diminui a largura para caber em telas menores */
+    padding: 2rem;            /* reduz o espaçamento interno */
+    margin: 0 auto;           /* centraliza horizontalmente */
+  }
+
+}
+
+/*Skils*/
+
+.skils {
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    transition: all 0.5s ease;
+    margin-left: 60rem;
+    margin-top: -16rem;
+}
+
+.skils2 {
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    transition: all 0.5s ease;
+    margin-left: 60rem;
+}
+
+.skils3 {
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    transition: all 0.5s ease;
+    margin-left: 60rem;
+    
+}
+
+@media (max-width: 1080px) {
+    .skils {
+        width: 5rem;
+        height: 5rem;
+        margin-left: 5rem;
+        margin-top: 1rem;
+    }
+    .skils2 {
+        width: 5rem;
+        height: 5rem;
+        margin-left: 5rem;
+    }
+    .skils3 {
+        width: 5rem;
+        height: 5rem;
+        margin-left: 5rem;
+    }
+
+}
+
+
+
+
+
+
+
